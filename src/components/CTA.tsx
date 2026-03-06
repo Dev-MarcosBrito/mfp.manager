@@ -16,7 +16,7 @@ const CTA = () => {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/50 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/50 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
               Solicite uma demonstração
             </a>
@@ -24,7 +24,7 @@ const CTA = () => {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center border-2 border-red-400 rounded-full text-white hover:bg-red-500/10 hover:border-red-500 px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+              className="inline-flex items-center justify-center border-2 border-blue-400 rounded-full text-white hover:bg-blue-500/10 hover:border-blue-500 px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
               Fale com o time de vendas
             </a>

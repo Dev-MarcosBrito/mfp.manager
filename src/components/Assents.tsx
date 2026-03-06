@@ -14,7 +14,7 @@ const Assets = () => {
     <section id="assets" className="py-20 md:py-32 bg-section-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider text-red-600">Tipos de ativos
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider text-blue-500">Tipos de ativos
           </span>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mt-3 mb-4">
             Gerenciar qualquer tipo de equipamento

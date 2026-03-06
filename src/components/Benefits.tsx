@@ -23,7 +23,7 @@ const Benefits = () => {
     <section id="benefits" className="py-20 md:py-32">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider text-red-600">Benefícios</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider text-blue-500">Benefícios</span>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mt-3 mb-4">
           Por que as empresas escolhem o MFP Manager?
           </h2>

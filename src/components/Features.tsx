@@ -28,7 +28,7 @@ const Features = () => {
         <section id="features" className="py-20 md:py-32">
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <span className="text-sm font-semibold text-primary uppercase tracking-wider text-red-600">Características</span>
+                    <span className="text-sm font-semibold text-primary uppercase tracking-wider text-blue-500">Características</span>
                     <h2 className="text-3xl md:text-4xl font-heading font-bold mt-3 mb-4">
                         Tudo o que você precisa para gerenciar ativos.
                     </h2>

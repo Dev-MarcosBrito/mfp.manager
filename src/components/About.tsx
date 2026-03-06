@@ -18,7 +18,7 @@ function About() {
 
                 <div className="space-y-10">
                     <div>
-                        <h3 className="flex justify-center items-center text-red-500 font-semibold mb-4">Web</h3>
+                        <h3 className="flex justify-center items-center text-blue-500 font-semibold mb-4">Web</h3>
                         <div className="flex justify-center">
                             <img
                                 src={telaPc}
@@ -30,7 +30,7 @@ function About() {
                     </div>
 
                     <div>
-                        <h3 className="flex justify-center items-center text-red-500 font-semibold mb-4">App</h3>
+                        <h3 className="flex justify-center items-center text-blue-500 font-semibold mb-4">App</h3>
                         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                             <img
                                 src={telaMobile1}
