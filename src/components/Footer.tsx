@@ -1,6 +1,7 @@
 import logoKti from "../assets/logo-kti.png"
 import logoMfp from "../assets/logo-mfp.png"
 
+
 const Footer = () => {
   return (
     <footer id="contact" className="border-t border-border bg-card py-16">
@@ -9,19 +10,24 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-6 mb-4">
               <div className="w-8 h-8 rounded-lg bg-hero-gradient flex items-center justify-center gap-2">
-                <img src={logoKti} alt="Logo da KTI" className="h-12 w-auto" loading="lazy" />
-                <img src={logoMfp} alt="Logo do MFP Manager" className="h-12 w-auto" loading="lazy" />
+                <img src={logoMfp} alt="Logo do MFP Manager" className="h-10 w-auto" loading="lazy" />
               </div>
               <span className="font-heading font-bold text-lg">MFP Manager</span>
             </div>
+            <div className="flex items-center gap-6 mb-4">
+              <div className="w-8 h-8 rounded-lg bg-hero-gradient flex items-center justify-center gap-2">
+                <img src={logoKti} alt="Logo da KTI" className="h-10 w-auto" loading="lazy" />
+              </div>
+              <span className="font-heading font-bold text-lg"> K.T.I Technology and Innovation</span>
+            </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Intelligent management platform for corporate equipment and assets.
+              Plataforma de gestão inteligente para equipamentos e ativos corporativos.
             </p>
           </div>
 
           {[
             { title: "Produtos", links: [{ label: "Printer", href: "/Printer" }, { label: "Assets", href: "/assets" }] },
-            { title: "Empresa", links: [{ label: "Sobre", href: "#sobre" }, { label: "Contato", href: "#contact" }] },
+            { title: "Empresa", links: [{ label: "Sobre", href: "https://www.kti.inf.br/web/sobre/" }, { label: "Contato", href: "#contact" }] },
             { title: "Suporte", links: [{ label: "Ajuda", href: "#contact" }] },
           ].map((col) => (
             <div key={col.title}>
