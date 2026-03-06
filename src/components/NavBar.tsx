@@ -30,12 +30,22 @@ function NavBar() {
             Assets
           </NavLink>
           <div className="flex items-center justify-center gap-2">
-            <button className="bg-blue-600 hover:bg-blue-700 px-4 py-1 rounded-full cursor-pointer text-xs md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+            <a
+              href="https://www.mfpmanager.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 px-4 py-1 rounded-full cursor-pointer text-xs md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+            >
               Login MFP - Printer
-            </button>
-            <button className="bg-blue-600 hover:bg-blue-700 px-4 py-1 rounded-full cursor-pointer text-xs md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+            </a>
+            <a
+              href="https://www.mfpmanager.com:887/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 px-4 py-1 rounded-full cursor-pointer text-xs md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+            >
               Login MFP - Assets
-            </button>
+            </a>
           </div>
         </div>
       </div>
