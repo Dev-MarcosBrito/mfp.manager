@@ -21,9 +21,14 @@ function PrinterPage() {
             >
               Solicitar demonstração do módulo Printer
             </a>
-            <button className="border-2 border-blue-400 rounded-full text-white hover:bg-blue-500/10 hover:border-blue-500 px-8 py-3 text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
-              Ver requisitos técnicos
-            </button>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center border-2 border-blue-400 rounded-full text-white hover:bg-blue-500/10 hover:border-blue-500 px-8 py-3 text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+            >
+              Conversar com um especialista
+            </a>
           </div>
         </div>
       </section>
