@@ -6,7 +6,8 @@ function Hero() {
     <section className="py-20 md:py-32 px-6 bg-hero-gradient scroll-mt-24" id="inicio">
       <div className="max-w-5xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-          Gestão inteligente de <span className="text-red-400">todos os seus ativos</span>
+          Gestão inteligente de <br />
+          <span className="text-red-400">todos os seus ativos</span>
         </h1>
         <p className="text-base md:text-lg text-gray-300 mb-10 max-w-3xl mx-auto">
           O MFPMANAGER® é um software criado para simplificar o gerenciamento e a manutenção do parque de ativos de TI.
