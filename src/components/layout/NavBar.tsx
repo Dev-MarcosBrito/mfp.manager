@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { Menu, X } from "lucide-react"
 import logoMfp from "../assets/logo-mfp.png"
-import { Button } from "./ui/Button"
+import { Button } from "../ui/Button"
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false)

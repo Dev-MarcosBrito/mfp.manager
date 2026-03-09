@@ -1,4 +1,4 @@
-import { WHATSAPP_URL } from "../components/WhatsAppFloat"
+import { WHATSAPP_URL } from "../components/layout/WhatsAppFloat"
 import { Button } from "../components/ui/Button"
 
 function PrinterPage() {

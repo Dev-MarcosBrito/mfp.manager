@@ -1,9 +1,9 @@
-import About from "../components/About"
-import Assets from "../components/Assents"
-import Benefits from "../components/Benefits"
-import CTA from "../components/CTA"
-import Features from "../components/Features"
-import Hero from "../components/Hero"
+import About from "../components/sections/About"
+import AssetsSection from "../components/sections/AssetsSection"
+import Benefits from "../components/sections/Benefits"
+import CTA from "../components/sections/CTA"
+import Features from "../components/sections/Features"
+import Hero from "../components/sections/Hero"
 
 function HomePage() {
   return (
@@ -12,11 +12,10 @@ function HomePage() {
       <Features />
       <Benefits />
       <About />
-      <Assets />
+      <AssetsSection />
       <CTA />
     </>
   )
 }
 
 export default HomePage
-

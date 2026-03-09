@@ -1,9 +1,9 @@
-import NavBar from "./components/NavBar"
-import Footer from "./components/Footer"
-import WhatsAppFloat from "./components/WhatsAppFloat"
+import NavBar from "./components/layout/NavBar"
+import Footer from "./components/layout/Footer"
+import WhatsAppFloat from "./components/layout/WhatsAppFloat"
 import { Routes, Route } from "react-router-dom"
 import HomePage from "./pages/HomePage"
-import PrinterPage from "./pages/Printer"
+import PrinterPage from "./pages/PrinterPage"
 import AssetsPage from "./pages/AssetsPage"
 
 

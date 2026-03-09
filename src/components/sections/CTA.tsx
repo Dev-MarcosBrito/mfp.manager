@@ -1,5 +1,5 @@
-import { WHATSAPP_URL } from "./WhatsAppFloat"
-import { Button } from "./ui/Button"
+import { WHATSAPP_URL } from "../layout/WhatsAppFloat"
+import { Button } from "../ui/Button"
 
 const CTA = () => {
   return (
