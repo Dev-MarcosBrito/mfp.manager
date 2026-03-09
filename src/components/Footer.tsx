@@ -1,46 +1,66 @@
 import logoKti from "../assets/logo-kti.png"
 import logoMfp from "../assets/logo-mfp.png"
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
   return (
-    <footer id="contact" className="border-t border-border bg-card py-16">
+    <footer id="contact" className="border-t border-white/5 bg-black py-20">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-10 mb-12">
-          <div>
-            <div className="flex items-center gap-6 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-hero-gradient flex items-center justify-center gap-2">
-                <img src={logoMfp} alt="Logo do MFP Manager" className="h-10 w-auto" loading="lazy" />
+        <div className="grid md:grid-cols-4 gap-12 mb-16">
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex flex-col gap-6 mb-8">
+              <div className="flex items-center gap-4">
+                <img src={logoMfp} alt="Logo do MFP Manager" className="h-8 w-auto" loading="lazy" />
+                <span className="font-black text-xl tracking-tight text-white">MFP Manager</span>
               </div>
-              <span className="font-heading font-bold text-lg">MFP Manager</span>
-            </div>
-            <div className="flex items-center gap-6 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-hero-gradient flex items-center justify-center gap-2">
-                <img src={logoKti} alt="Logo da KTI" className="h-10 w-auto" loading="lazy" />
+              <div className="flex items-center gap-4">
+                <img src={logoKti} alt="Logo da KTI" className="h-8 w-auto" loading="lazy" />
+                <span className="font-bold text-lg text-gray-400"> K.T.I Technology and Innovation</span>
               </div>
-              <span className="font-heading font-bold text-lg"> K.T.I Technology and Innovation</span>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Plataforma de gestão inteligente para equipamentos e ativos corporativos.
+            <p className="text-gray-500 leading-relaxed max-w-sm">
+              Líder em soluções de gestão inteligente para ativos de TI e parques de impressão corporativos. 
+              Transformando dados em eficiência operacional.
             </p>
           </div>
 
           {[
-            { title: "Produtos", links: [{ label: "Printer", href: "/Printer" }, { label: "Assets", href: "/assets" }] },
-            { title: "Empresa", links: [{ label: "Sobre", href: "https://www.kti.inf.br/web/sobre/" }, { label: "Contato", href: "#contact" }] },
-            { title: "Suporte", links: [{ label: "Ajuda", href: "#contact" }] },
+            { 
+              title: "Produtos", 
+              links: [
+                { label: "Printer", href: "/printer", isInternal: true }, 
+                { label: "Assets", href: "/assets", isInternal: true }
+              ] 
+            },
+            { 
+              title: "Institucional", 
+              links: [
+                { label: "Sobre a KTI", href: "https://www.kti.inf.br/web/sobre/", isInternal: false }, 
+                { label: "Contato", href: "#contact", isInternal: false }
+              ] 
+            },
           ].map((col) => (
             <div key={col.title}>
-              <h4 className="font-heading font-semibold text-sm mb-4">{col.title}</h4>
-              <ul className="space-y-2.5">
+              <h4 className="font-bold text-white mb-6 uppercase tracking-widest text-xs">{col.title}</h4>
+              <ul className="space-y-4">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm"
-                    >
-                      {link.label}
-                    </a>
+                    {link.isInternal ? (
+                      <Link
+                        to={link.href}
+                        className="text-gray-500 hover:text-blue-400 transition-colors text-sm font-medium"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href}
+                        className="text-gray-500 hover:text-blue-400 transition-colors text-sm font-medium"
+                      >
+                        {link.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -48,21 +68,11 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2026 MFP Manager. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a
-              href="#"
-              className="hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm"
-            >
-              Terms of Service
-            </a>
+        <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-600 font-medium">
+          <p>© 2026 MFP Manager. Todos os direitos reservados.</p>
+          <div className="flex gap-8">
+            <a href="#" className="hover:text-white transition-colors">Privacidade</a>
+            <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
           </div>
         </div>
       </div>

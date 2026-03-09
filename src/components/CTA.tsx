@@ -1,33 +1,27 @@
 import { WHATSAPP_URL } from "./WhatsAppFloat"
+import { Button } from "./ui/Button"
 
 const CTA = () => {
   return (
-    <section className="py-20 md:py-32 bg-section-gradient">
+    <section className="py-20 md:py-32 bg-gradient-to-t from-blue-900/20 to-black">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center rounded-2xl bg-hero-gradient p-12 md:p-16 shadow-hero">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-4">
-          Pronto para assumir o controle de seus ativos?
+        <div className="max-w-4xl mx-auto text-center rounded-[3rem] border border-white/5 bg-white/[0.02] backdrop-blur-xl p-12 md:p-20 shadow-2xl relative overflow-hidden">
+          {/* Inner Glow */}
+          <div className="absolute inset-0 bg-blue-600/5 -z-10" />
+          
+          <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight text-white">
+            Pronto para assumir o controle total?
           </h2>
-          <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-          Junte-se a empresas que já utilizam o MFP Manager para reduzir custos, ganhar visibilidade e eliminar o improviso na gestão de ativos.
+          <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+            Junte-se a centenas de empresas que já utilizam o MFP Manager para eliminar o improviso e ganhar visibilidade total sobre seu parque tecnológico.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/50 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-            >
-              Solicite uma demonstração
-            </a>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center border-2 border-blue-400 rounded-full text-white hover:bg-blue-500/10 hover:border-blue-500 px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-            >
-              Fale com o time de vendas
-            </a>
+            <Button href={WHATSAPP_URL} variant="primary" size="lg" className="w-full sm:w-auto">
+              Solicitar Demonstração
+            </Button>
+            <Button href={WHATSAPP_URL} variant="outline" size="lg" className="w-full sm:w-auto border-white/10">
+              Falar com o Time
+            </Button>
           </div>
         </div>
       </div>

@@ -1,75 +1,92 @@
 import { WHATSAPP_URL } from "../components/WhatsAppFloat"
+import { Button } from "../components/ui/Button"
 
 function PrinterPage() {
   return (
-    <>
-      <section className="py-16 md:py-24 bg-hero-gradient">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
-          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
-            Monitoramento inteligente de impressoras e MFPs
+    <div className="pt-20">
+      {/* Hero Section */}
+      <section className="relative py-20 md:py-32 px-6 overflow-hidden bg-black">
+        {/* Background Decorative Elements */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+          <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600/20 blur-[120px] rounded-full" />
+        </div>
+
+        <div className="max-w-5xl mx-auto text-center relative z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-6 animate-fade-in">
+            Solução Especialista para Impressão
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 tracking-tight leading-[1.1]">
+            MFP MANAGER <br /> 
+            <span className="text-gradient">PRINTER</span>
           </h1>
-          <p className="text-muted-foreground text-lg mb-8">
-            Acompanhe status, consumo, alertas e manutenção do seu parque de impressão em tempo real,
-            com dashboards claros e alertas automáticos.
+          
+          <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+            O software definitivo para monitoramento e gestão estratégica do seu parque de impressão. 
+            Controle total de insumos, chamados e custos em uma interface intuitiva e poderosa.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/40 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-            >
-              Solicitar demonstração do módulo Printer
-            </a>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center border-2 border-blue-400 rounded-full text-white hover:bg-blue-500/10 hover:border-blue-500 px-8 py-3 text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-            >
-              Conversar com um especialista
-            </a>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <Button href={WHATSAPP_URL} variant="primary" size="lg" className="w-full sm:w-auto">
+              Solicitar Demonstração
+            </Button>
+            <Button href={WHATSAPP_URL} variant="outline" size="lg" className="w-full sm:w-auto border-white/10">
+              Falar com Vendas
+            </Button>
+          </div>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+          <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-500">
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">Monitoramento</p>
+            <p className="text-xl font-bold text-white mb-2">Tempo Real</p>
+            <p className="text-sm text-gray-500 leading-relaxed">Atualizações precisas em intervalos de 3 minutos.</p>
+          </div>
+          <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-500">
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">Gestão</p>
+            <p className="text-xl font-bold text-white mb-2">Controle de Custos</p>
+            <p className="text-sm text-gray-500 leading-relaxed">Visão detalhada por contrato e centro de custo.</p>
+          </div>
+          <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-500">
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">Proatividade</p>
+            <p className="text-xl font-bold text-white mb-2">Alertas Inteligentes</p>
+            <p className="text-sm text-gray-500 leading-relaxed">Identifique falhas e níveis baixos antes do impacto.</p>
+          </div>
+          <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-500">
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">Financeiro</p>
+            <p className="text-xl font-bold text-white mb-2">Faturamento Auto</p>
+            <p className="text-sm text-gray-500 leading-relaxed">Integração com contadores e geração de faturas.</p>
           </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 grid gap-10 md:grid-cols-3">
-          <div className="md:col-span-2 space-y-4">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold">
-              Tudo o que você precisa para controlar o parque de impressão
+      {/* CTA Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-t from-blue-900/20 to-black">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center rounded-[3rem] border border-white/5 bg-white/[0.02] backdrop-blur-xl p-12 md:p-20 shadow-2xl relative overflow-hidden">
+            {/* Inner Glow */}
+            <div className="absolute inset-0 bg-blue-600/5 -z-10" />
+            
+            <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight text-white">
+              Pronto para otimizar sua <br />gestão de impressão?
             </h2>
-            <p className="text-muted-foreground">
-              Centralize contratos, contadores, consumo de toner e chamados em um único painel. O MFP
-              Manager foi pensado para provedores de outsourcing e equipes internas de TI que precisam
-              de visibilidade total.
+            <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+              Junte-se a empresas líderes que já utilizam o MFP Manager para ganhar visibilidade, 
+              reduzir custos e automatizar processos críticos.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-muted-foreground">
-              <div className="rounded-xl border border-white/10 bg-black/40 px-4 py-3">
-              <p className="text-xs uppercase tracking-widest text-blue-400 mb-1">Controle de custos</p>
-                <p className="text-base font-semibold">Visão por contrato e centro de custo</p>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-black/40 px-4 py-3">
-              <p className="text-xs uppercase tracking-widest text-blue-400 mb-1">Alertas proativos</p>
-                <p className="text-base font-semibold">Falhas e suprimentos antes de impactar o usuário</p>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-black/40 px-4 py-3">
-              <p className="text-xs uppercase tracking-widest text-blue-400 mb-1">Histórico completo</p>
-                <p className="text-base font-semibold">Chamados, manutenções e trocas rastreadas</p>
-              </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button href={WHATSAPP_URL} variant="primary" size="lg" className="w-full sm:w-auto">
+                Solicitar Demonstração
+              </Button>
+              <Button href={WHATSAPP_URL} variant="outline" size="lg" className="w-full sm:w-auto border-white/10">
+                Falar com o Time
+              </Button>
             </div>
-          </div>
-          <div className="space-y-3">
-            <h3 className="font-heading font-semibold text-lg">Principais destaques</h3>
-            <ul className="list-disc list-inside text-muted-foreground space-y-1">
-              <li>Alertas automáticos de falhas e suprimentos.</li>
-              <li>Relatórios por contrato, centro de custo e localização.</li>
-              <li>Histórico completo de chamados e manutenções.</li>
-            </ul>
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
