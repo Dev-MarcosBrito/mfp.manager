@@ -1,16 +1,20 @@
+import { useTranslation } from "react-i18next"
 import { WHATSAPP_URL } from "../components/layout/WhatsAppFloat"
 import { Button } from "../components/ui/Button"
-import { Dumbbell, Trash2, BatteryCharging, Server, Wrench, } from "lucide-react";
-
-const assets = [  
-  { icon: Dumbbell, label: "Equipamentos de ginástica" },
-  { icon: Trash2, label: "Caçambas de lixo" },
-  { icon: BatteryCharging, label: "Dispositivos UPS" },
-  { icon: Server, label: "Equipamentos de rede" },
-  { icon: Wrench, label: "Ferramentas de manutenção" },
-];
+import { Dumbbell, Trash2, BatteryCharging, Server, Wrench, Printer } from "lucide-react";
 
 function AssetsPage() {
+  const { t } = useTranslation()
+
+  const assets = [
+    { icon: Printer, label: t("assets_section.items.printers") },
+    { icon: Dumbbell, label: t("assets_section.items.gym") },
+    { icon: Trash2, label: t("assets_section.items.trash") },
+    { icon: BatteryCharging, label: t("assets_section.items.ups") },
+    { icon: Server, label: t("assets_section.items.network") },
+    { icon: Wrench, label: t("assets_section.items.maintenance") },
+  ];
+
   return (
     <div className="pt-20">
       {/* Hero Section */}
@@ -22,22 +26,21 @@ function AssetsPage() {
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-6 animate-fade-in">
-            Gestão Versátil de Ativos
+            {t("assets_page.badge")}
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 tracking-tight leading-[1.1]">
-            MFP MANAGER <br /> 
+            {t("assets_page.title")} <br /> 
             <span className="text-gradient">ASSETS</span>
           </h1>
           
           <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Uma solução multissetorial para controle total de ativos. 
-            Organize, monitore e otimize qualquer tipo de equipamento em uma plataforma centralizada e inteligente.
+            {t("assets_page.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button href={WHATSAPP_URL} variant="primary" size="lg" className="w-full sm:w-auto">
-              Solicitar Demonstração Assets
+              {t("assets_page.cta_demo")}
             </Button>
           </div>
         </div>
@@ -45,24 +48,24 @@ function AssetsPage() {
         {/* Stats Grid */}
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
           <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-500">
-            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">Monitoramento</p>
-            <p className="text-xl font-bold text-white mb-2">Intervalo de 3min</p>
-            <p className="text-sm text-gray-500 leading-relaxed">Informações sempre atualizadas em tempo real.</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">{t("assets_page.stats.monitoring")}</p>
+            <p className="text-xl font-bold text-white mb-2">{t("assets_page.stats.interval")}</p>
+            <p className="text-sm text-gray-500 leading-relaxed">{t("assets_page.stats.interval_desc")}</p>
           </div>
           <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-500">
-            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">Economia</p>
-            <p className="text-xl font-bold text-white mb-2">Controle de Custos</p>
-            <p className="text-sm text-gray-500 leading-relaxed">Gestão por contrato e centro de custo.</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">{t("assets_page.stats.economy")}</p>
+            <p className="text-xl font-bold text-white mb-2">{t("assets_page.stats.costs")}</p>
+            <p className="text-sm text-gray-500 leading-relaxed">{t("assets_page.stats.costs_desc")}</p>
           </div>
           <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-500">
-            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">Inteligência</p>
-            <p className="text-xl font-bold text-white mb-2">Alertas Proativos</p>
-            <p className="text-sm text-gray-500 leading-relaxed">Prevenção de falhas antes de impactar o usuário.</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">{t("assets_page.stats.intelligence")}</p>
+            <p className="text-xl font-bold text-white mb-2">{t("assets_page.stats.alerts")}</p>
+            <p className="text-sm text-gray-500 leading-relaxed">{t("assets_page.stats.alerts_desc")}</p>
           </div>
           <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-blue-500/30 transition-all duration-500">
-            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">Operacional</p>
-            <p className="text-xl font-bold text-white mb-2">Fechamento Mensal</p>
-            <p className="text-sm text-gray-500 leading-relaxed">Gestão de faturamento e integração automática.</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-blue-400 mb-2 font-bold">{t("assets_page.stats.operational")}</p>
+            <p className="text-xl font-bold text-white mb-2">{t("assets_page.stats.billing")}</p>
+            <p className="text-sm text-gray-500 leading-relaxed">{t("assets_page.stats.billing_desc")}</p>
           </div>
         </div>
       </section>
@@ -72,20 +75,20 @@ function AssetsPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-20">
             <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest">
-              Versatilidade
+              {t("assets_page.types.badge")}
             </span>
             <h2 className="text-3xl md:text-5xl font-black mt-6 mb-6 tracking-tight">
-              Gerencie Qualquer Equipamento
+              {t("assets_page.types.title")}
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              De tecnologia a infraestrutura física, o MFP Manager se adapta a qualquer categoria de ativo.
+              {t("assets_page.types.subtitle")}
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
             {assets.map((a, i) => (
               <div 
-                key={a.label} 
+                key={i} 
                 className="group relative flex flex-col items-center gap-4 p-8 rounded-3xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-500 hover:-translate-y-2 hover:border-blue-500/30"
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
@@ -111,17 +114,17 @@ function AssetsPage() {
             <div className="absolute inset-0 bg-blue-600/5 -z-10" />
             
             <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight text-white">
-              Pronto para assumir o controle total?
+              {t("assets_page.cta_section.title")}
             </h2>
             <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
-              Elimine o improviso e ganhe visibilidade total sobre seu patrimônio com a solução de gestão de ativos mais completa do mercado.
+              {t("assets_page.cta_section.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href={WHATSAPP_URL} variant="primary" size="lg" className="w-full sm:w-auto">
-                Solicitar Demonstração
+                {t("cta.demo")}
               </Button>
               <Button href={WHATSAPP_URL} variant="outline" size="lg" className="w-full sm:w-auto border-white/10">
-                Falar com o Time
+                {t("cta.team")}
               </Button>
             </div>
           </div>

@@ -1,9 +1,12 @@
-import logoKti from "../assets/logo-kti.png"
-import logoMfp from "../assets/logo-mfp.png"
+import { useTranslation } from "react-i18next";
+import logoKti from "../../assets/logo-kti.png"
+import logoMfp from "../../assets/logo-mfp.png"
 import { Link } from "react-router-dom";
 
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer id="contact" className="border-t border-white/5 bg-black py-20">
       <div className="container mx-auto px-4">
@@ -20,24 +23,23 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-500 leading-relaxed max-w-sm">
-              Líder em soluções de gestão inteligente para ativos de TI e parques de impressão corporativos. 
-              Transformando dados em eficiência operacional.
+              {t("footer.desc")}
             </p>
           </div>
 
           {[
             { 
-              title: "Produtos", 
+              title: t("footer.products"), 
               links: [
-                { label: "Printer", href: "/printer", isInternal: true }, 
-                { label: "Assets", href: "/assets", isInternal: true }
+                { label: t("nav.printer"), href: "/printer", isInternal: true }, 
+                { label: t("nav.assets"), href: "/assets", isInternal: true }
               ] 
             },
             { 
-              title: "Institucional", 
+              title: t("footer.institutional"), 
               links: [
-                { label: "Sobre a KTI", href: "https://www.kti.inf.br/web/sobre/", isInternal: false }, 
-                { label: "Contato", href: "#contact", isInternal: false }
+                { label: t("footer.about_kti"), href: "https://www.kti.inf.br/web/sobre/", isInternal: false }, 
+                { label: t("footer.contact"), href: "#contact", isInternal: false }
               ] 
             },
           ].map((col) => (
@@ -69,10 +71,10 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-600 font-medium">
-          <p>© 2026 MFP Manager. Todos os direitos reservados.</p>
+          <p>© 2026 MFP Manager. {t("footer.rights")}</p>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors">Privacidade</a>
-            <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
+            <a href="#" className="hover:text-white transition-colors">{t("footer.privacy")}</a>
+            <a href="#" className="hover:text-white transition-colors">{t("footer.terms")}</a>
           </div>
         </div>
       </div>

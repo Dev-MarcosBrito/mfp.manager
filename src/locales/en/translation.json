@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "printer": "Printer",
+    "assets": "Assets",
+    "login_printer": "Login Printer",
+    "login_assets": "Login Assets",
+    "choose_language": "Choose Language"
+  },
+  "hero": {
+    "badge": "Next-Gen Asset Management SaaS",
+    "title": "Master your Infrastructure",
+    "title_gradient": "with Intelligence",
+    "subtitle": "MFPMANAGER® centralizes asset and printer fleet control, eliminating downtime and reducing operational costs with total real-time visibility.",
+    "cta_printer": "Printer Solution",
+    "cta_assets": "Assets Solution",
+    "cta_specialist": "Talk to Specialist",
+    "stats": {
+      "performance": "Performance",
+      "downtime": "Downtime reduction",
+      "scalability": "Scalability",
+      "monitored": "Monitored assets",
+      "strategic": "Strategic decisions"
+    }
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Complete End-to-End Management",
+    "subtitle": "A set of premium tools designed to organize and optimize your entire IT ecosystem.",
+    "items": {
+      "registry": {
+        "title": "Asset Registry",
+        "desc": "Catalog all company equipment with detailed profiles, serial numbers, and complete history."
+      },
+      "monitoring": {
+        "title": "Real-time Monitoring",
+        "desc": "Track status and alerts in real-time with an intuitive and centralized dashboard."
+      },
+      "analytics": {
+        "title": "Reports and Analytics",
+        "desc": "Generate comprehensive reports on utilization and lifecycle to support strategic decisions."
+      },
+      "maintenance": {
+        "title": "Preventive Maintenance",
+        "desc": "Automate schedules and receive proactive notifications before problems arise."
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Benefits",
+    "title": "Why Leaders Choose MFP Manager?",
+    "subtitle": "Measurable impact on operations and revenue from day one.",
+    "items": {
+      "efficiency": {
+        "title": "Maximum Efficiency",
+        "desc": "Reduce downtime by up to 40% with proactive monitoring and automated alerts."
+      },
+      "visibility": {
+        "title": "Total Visibility",
+        "desc": "Centralize all asset information in a single high-performance SaaS platform."
+      },
+      "costs": {
+        "title": "Cost Reduction",
+        "desc": "Optimize replacement cycles and reduce unnecessary spending with data-driven insights."
+      }
+    }
+  },
+  "about": {
+    "badge": "Ecosystem",
+    "title": "Omnichannel Experience: Web and App",
+    "subtitle": "Track your assets with total visibility. From the web admin panel to the mobile app, you have control in the palm of your hand with real-time synchronization.",
+    "web_title": "High-Performance Web Platform",
+    "app_title": "Intuitive Mobile App"
+  },
+  "assets_section": {
+    "badge": "Asset Types",
+    "title": "Manage Any Equipment",
+    "subtitle": "From printers to physical infrastructure, MFP Manager adapts perfectly to all your asset categories.",
+    "items": {
+      "printers": "Printers and MFPs",
+      "gym": "Gym Equipment",
+      "trash": "Trash Containers",
+      "ups": "UPS Devices",
+      "network": "Network Equipment",
+      "maintenance": "Maintenance Tools"
+    }
+  },
+  "cta": {
+    "title": "Ready to take full control?",
+    "subtitle": "Join hundreds of companies already using MFP Manager to eliminate guesswork and gain total visibility over their tech fleet.",
+    "demo": "Request Demo",
+    "team": "Talk to the Team"
+  },
+  "footer": {
+    "desc": "Leader in intelligent management solutions for IT assets and corporate printer fleets. Transforming data into operational efficiency.",
+    "products": "Products",
+    "institutional": "Institutional",
+    "about_kti": "About KTI",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "printer_page": {
+    "badge": "Specialist Solution for Printing",
+    "title": "MFP MANAGER",
+    "subtitle": "The ultimate software for monitoring and strategic management of your printing fleet. Total control of supplies, tickets, and costs in an intuitive and powerful interface.",
+    "cta_demo": "Request Demo",
+    "cta_sales": "Talk to Sales",
+    "stats": {
+      "monitoring": "Monitoring",
+      "real_time": "Real Time",
+      "real_time_desc": "Precise updates in 3-minute intervals.",
+      "management": "Management",
+      "costs": "Cost Control",
+      "costs_desc": "Detailed view by contract and cost center.",
+      "proactivity": "Proactivity",
+      "alerts": "Smart Alerts",
+      "alerts_desc": "Identify failures and low levels before impact.",
+      "financial": "Financial",
+      "billing": "Auto Billing",
+      "billing_desc": "Integration with accountants and invoice generation."
+    },
+    "cta_section": {
+      "title": "Ready to optimize your printing management?",
+      "subtitle": "Join leading companies already using MFP Manager to gain visibility, reduce costs, and automate critical processes."
+    }
+  },
+  "assets_page": {
+    "badge": "Versatile Asset Management",
+    "title": "MFP MANAGER",
+    "subtitle": "A multi-sector solution for total asset control. Organize, monitor, and optimize any type of equipment in a centralized and intelligent platform.",
+    "cta_demo": "Request Assets Demo",
+    "stats": {
+      "monitoring": "Monitoring",
+      "interval": "3min Interval",
+      "interval_desc": "Always updated real-time information.",
+      "economy": "Economy",
+      "costs": "Cost Control",
+      "costs_desc": "Management by contract and cost center.",
+      "intelligence": "Intelligence",
+      "alerts": "Proactive Alerts",
+      "alerts_desc": "Prevention of failures before impacting the user.",
+      "operational": "Operational",
+      "billing": "Monthly Closing",
+      "billing_desc": "Billing management and automatic integration."
+    },
+    "types": {
+      "badge": "Versatility",
+      "title": "Manage Any Equipment",
+      "subtitle": "From technology to physical infrastructure, MFP Manager adapts to any asset category."
+    },
+    "cta_section": {
+      "title": "Ready to take full control?",
+      "subtitle": "Eliminate guesswork and gain total visibility over your assets with the most complete management solution on the market."
+    }
+  }
+}

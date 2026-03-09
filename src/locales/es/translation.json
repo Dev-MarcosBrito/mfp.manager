@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "printer": "Printer",
+    "assets": "Assets",
+    "login_printer": "Login Printer",
+    "login_assets": "Login Assets",
+    "choose_language": "Elegir Idioma"
+  },
+  "hero": {
+    "badge": "SaaS de Gestión de Activos de Próxima Generación",
+    "title": "Domine su Infraestructura",
+    "title_gradient": "con Inteligencia",
+    "subtitle": "El MFPMANAGER® centraliza el control de activos y parque de impresión, eliminando el tiempo de inactividad y reduciendo los costos operativos con visibilidad total en tiempo real.",
+    "cta_printer": "Solución Printer",
+    "cta_assets": "Solución Assets",
+    "cta_specialist": "Hablar con Especialista",
+    "stats": {
+      "performance": "Desempeño",
+      "downtime": "Reducción de inactividad",
+      "scalability": "Escalabilidad",
+      "monitored": "Activos monitoreados",
+      "strategic": "Decisiones estratégicas"
+    }
+  },
+  "features": {
+    "badge": "Funcionalidades",
+    "title": "Gestión Completa de Punta a Punta",
+    "subtitle": "Un conjunto de herramientas premium diseñadas para organizar y optimizar todo su ecosistema de TI.",
+    "items": {
+      "registry": {
+        "title": "Registro de Activos",
+        "desc": "Catalogue todos los equipos de la empresa con perfiles detallados, números de serie e historial completo."
+      },
+      "monitoring": {
+        "title": "Monitoreo en Tiempo Real",
+        "desc": "Siga el estado y las alertas en tiempo real con un panel intuitivo y centralizado."
+      },
+      "analytics": {
+        "title": "Informes y Análisis",
+        "desc": "Genere informes exhaustivos sobre utilización y ciclo de vida para apoyar decisiones estratégicas."
+      },
+      "maintenance": {
+        "title": "Mantenimiento Preventivo",
+        "desc": "Automatice cronogramas y reciba notificaciones proactivas antes de que surjan problemas."
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Beneficios",
+    "title": "¿Por qué los Líderes eligen MFP Manager?",
+    "subtitle": "Impacto medible en las operaciones y la facturación desde el primer día.",
+    "items": {
+      "efficiency": {
+        "title": "Eficiencia Máxima",
+        "desc": "Reduzca el tiempo de inactividad hasta en un 40% con monitoreo proactivo y alertas automatizadas."
+      },
+      "visibility": {
+        "title": "Visibilidad Total",
+        "desc": "Centralice toda la información de activos en una única plataforma SaaS de alto rendimiento."
+      },
+      "costs": {
+        "title": "Reducción de Costos",
+        "desc": "Optimice los ciclos de reemplazo y reduzca gastos innecesarios con información basada en datos."
+      }
+    }
+  },
+  "about": {
+    "badge": "Ecosistema",
+    "title": "Experiencia Omnicanal: Web y App",
+    "subtitle": "Siga sus activos con total visibilidad. Desde el panel de administración web hasta la aplicación móvil, tiene el control en la palma de su mano con sincronización en tiempo real.",
+    "web_title": "Plataforma Web de Alto Rendimiento",
+    "app_title": "Aplicación Móvil Intuitiva"
+  },
+  "assets_section": {
+    "badge": "Tipos de Activos",
+    "title": "Gestione Cualquier Equipo",
+    "subtitle": "Desde impresoras hasta infraestructura física, MFP Manager se adapta perfectamente a todas sus categorías de activos.",
+    "items": {
+      "printers": "Impresoras y MFPs",
+      "gym": "Equipos de Gimnasio",
+      "trash": "Contenedores de Basura",
+      "ups": "Dispositivos UPS",
+      "network": "Equipos de Red",
+      "maintenance": "Herramientas de Mantenimiento"
+    }
+  },
+  "cta": {
+    "title": "¿Listo para tomar el control total?",
+    "subtitle": "Únase a cientos de empresas que ya utilizan MFP Manager para eliminar la improvisación y ganar visibilidad total sobre su parque tecnológico.",
+    "demo": "Solicitar Demo",
+    "team": "Hablar con el Equipo"
+  },
+  "footer": {
+    "desc": "Líder en soluciones de gestión inteligente para activos de TI y parques de impresión corporativos. Transformando datos en eficiencia operativa.",
+    "products": "Productos",
+    "institutional": "Institucional",
+    "about_kti": "Sobre KTI",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos de Uso"
+  },
+  "printer_page": {
+    "badge": "Solución Especialista para Impresión",
+    "title": "MFP MANAGER",
+    "subtitle": "El software definitivo para el monitoreo y la gestión estratégica de su parque de impresión. Control total de suministros, tickets y costos en una interfaz intuitiva y potente.",
+    "cta_demo": "Solicitar Demostración",
+    "cta_sales": "Hablar con Ventas",
+    "stats": {
+      "monitoring": "Monitoreo",
+      "real_time": "Tiempo Real",
+      "real_time_desc": "Actualizaciones precisas en intervalos de 3 minutos.",
+      "management": "Gestión",
+      "costs": "Control de Costos",
+      "costs_desc": "Visión detallada por contrato y centro de costo.",
+      "proactivity": "Proactividad",
+      "alerts": "Alertas Inteligentes",
+      "alerts_desc": "Identifique fallas y niveles bajos antes del impacto.",
+      "financial": "Financiero",
+      "billing": "Facturación Auto",
+      "billing_desc": "Integración con contadores y generación de facturas."
+    },
+    "cta_section": {
+      "title": "¿Listo para optimizar su gestión de impresión?",
+      "subtitle": "Únase a empresas líderes que ya utilizan MFP Manager para ganar visibilidad, reducir costos y automatizar procesos críticos."
+    }
+  },
+  "assets_page": {
+    "badge": "Gestión Versátil de Activos",
+    "title": "MFP MANAGER",
+    "subtitle": "Una solución multisectorial para el control total de activos. Organice, monitoree y optimice cualquier tipo de equipo en una plataforma centralizada e inteligente.",
+    "cta_demo": "Solicitar Demo Assets",
+    "stats": {
+      "monitoring": "Monitoreo",
+      "interval": "Intervalo de 3min",
+      "interval_desc": "Información siempre actualizada en tiempo real.",
+      "economy": "Economía",
+      "costs": "Control de Costos",
+      "costs_desc": "Gestión por contrato y centro de costo.",
+      "intelligence": "Inteligencia",
+      "alerts": "Alertas Proactivas",
+      "alerts_desc": "Prevención de fallas antes de impactar al usuario.",
+      "operational": "Operacional",
+      "billing": "Cierre Mensual",
+      "billing_desc": "Gestión de facturación e integración automática."
+    },
+    "types": {
+      "badge": "Versatilidad",
+      "title": "Gestione Cualquier Equipo",
+      "subtitle": "Desde tecnología hasta infraestructura física, MFP Manager se adapta a cualquier categoría de activo."
+    },
+    "cta_section": {
+      "title": "¿Listo para tomar el control total?",
+      "subtitle": "Elimine la improvisación y gane visibilidad total sobre su patrimonio con la solución de gestión de activos más completa del mercado."
+    }
+  }
+}

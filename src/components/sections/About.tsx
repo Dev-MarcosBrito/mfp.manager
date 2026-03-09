@@ -1,23 +1,25 @@
-import telaPc from '../assets/mfp-tela-pc-1.png'
-import telaMobile1 from '../assets/mfp-mobile-tela-1.png'
-import telaMobile2 from '../assets/mfp-mobile-tela-2.png'
-import telaMobile3 from '../assets/mfp-mobile-tela-3.png'
+import { useTranslation } from "react-i18next";
+import telaPc from '../../assets/mfp-tela-pc-1.png'
+import telaMobile1 from '../../assets/mfp-mobile-tela-1.png'
+import telaMobile2 from '../../assets/mfp-mobile-tela-2.png'
+import telaMobile3 from '../../assets/mfp-mobile-tela-3.png'
 
 
 function About() {
+    const { t } = useTranslation();
+
     return (
         <section id="sobre" className="py-20 md:py-32 scroll-mt-24 relative overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-20">
                     <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest">
-                        Ecossistema
+                        {t("about.badge")}
                     </span>
                     <h2 className="text-3xl md:text-5xl font-black mt-6 mb-6 tracking-tight">
-                        Experiência Omnichannel: Web e App
+                        {t("about.title")}
                     </h2>
                     <p className="text-gray-400 text-lg leading-relaxed">
-                        Acompanhe seus ativos com total visibilidade. Do painel administrativo web ao aplicativo móvel, 
-                        você tem o controle na palma da mão com sincronização em tempo real.
+                        {t("about.subtitle")}
                     </p>
                 </div>
 
@@ -28,7 +30,7 @@ function About() {
                         <div className="relative">
                             <h3 className="text-xl font-bold text-blue-400 mb-8 flex items-center gap-3 justify-center">
                                 <span className="w-8 h-[1px] bg-blue-500/30" />
-                                Plataforma Web de Alta Performance
+                                {t("about.web_title")}
                                 <span className="w-8 h-[1px] bg-blue-500/30" />
                             </h3>
                             <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-4 backdrop-blur-sm shadow-2xl">
@@ -48,7 +50,7 @@ function About() {
                         <div className="relative">
                             <h3 className="text-xl font-bold text-blue-400 mb-8 flex items-center gap-3 justify-center">
                                 <span className="w-8 h-[1px] bg-blue-500/30" />
-                                Aplicativo Móvel Intuitivo
+                                {t("about.app_title")}
                                 <span className="w-8 h-[1px] bg-blue-500/30" />
                             </h3>
                             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">

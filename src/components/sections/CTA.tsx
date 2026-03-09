@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { WHATSAPP_URL } from "../layout/WhatsAppFloat"
 import { Button } from "../ui/Button"
 
 const CTA = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 md:py-32 bg-gradient-to-t from-blue-900/20 to-black">
       <div className="container mx-auto px-4">
@@ -10,17 +13,17 @@ const CTA = () => {
           <div className="absolute inset-0 bg-blue-600/5 -z-10" />
           
           <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight text-white">
-            Pronto para assumir o controle total?
+            {t("cta.title")}
           </h2>
           <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
-            Junte-se a centenas de empresas que já utilizam o MFP Manager para eliminar o improviso e ganhar visibilidade total sobre seu parque tecnológico.
+            {t("cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button href={WHATSAPP_URL} variant="primary" size="lg" className="w-full sm:w-auto">
-              Solicitar Demonstração
+              {t("cta.demo")}
             </Button>
             <Button href={WHATSAPP_URL} variant="outline" size="lg" className="w-full sm:w-auto border-white/10">
-              Falar com o Time
+              {t("cta.team")}
             </Button>
           </div>
         </div>
